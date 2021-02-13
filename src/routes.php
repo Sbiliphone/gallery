@@ -1,9 +1,15 @@
 <?php
 $action = (isset($_REQUEST['action'])) ? $_REQUEST['action'] : 'homepage';
 
-echo "<hr>Action=$action<hr>";
+//echo "<hr>Action=$action<hr>";
 
 
+/* equivalente - idea Daniel C.
+$azioniPossibili=['homepage','login','login-check'];
+if (is_array($action,$azioniPossibili)) {
+    require('../src/controller/' . $action . '.php');
+}
+*/
 switch ($action){
     case 'homepage':
         require('../src/controller/homepage.php');
