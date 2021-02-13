@@ -20,5 +20,7 @@ switch ($action){
     case 'login-check':
         require('../src/controller/login-check.php');
         break;
-
+    case 'logout':
+        require('../src/controller/logout.php');
+        break;
 }
