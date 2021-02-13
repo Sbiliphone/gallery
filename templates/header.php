@@ -10,4 +10,4 @@
 
     <title>Galleria</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">

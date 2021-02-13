@@ -2,7 +2,7 @@
 require('../templates/header.php');
 ?>
 
-<div class="container">
+<div class="container my-auto">
     <form method="post" action="?action=login-check">
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
@@ -12,7 +12,7 @@ require('../templates/header.php');
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" name="password">
-            <div id="usernameHelp" class="form-text">Scrivi la tua passowrd solo nella tua mente, non su un post-it.
+            <div id="usernameHelp" class="form-text">Scrivi la tua password solo nella tua mente, non su un post-it.
             </div>
         </div>
         <!--
