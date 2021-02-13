@@ -26,4 +26,12 @@ switch ($action){
         require('../src/controller/Access.php');
         logout();
         break;
+    case 'change-password':
+        require('../src/controller/Password.php');
+        showForm();
+        break;
+    case 'set-password':
+        require('../src/controller/Password.php');
+        setPassword();
+        break;
 }

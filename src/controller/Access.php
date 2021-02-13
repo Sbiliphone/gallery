@@ -13,6 +13,7 @@ function loginCheck()
     $rs = $db->execute($sql);
     if (count($rs->getRows())>0){
         $_SESSION['authorized']=true;
+        $_SESSION['username']=$username;
         header('Location: index.php');
     } else {
         $_SESSION['messaggio']='Credenziali non valide';
