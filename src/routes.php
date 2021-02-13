@@ -15,10 +15,15 @@ switch ($action){
         require('../src/controller/homepage.php');
         break;
     case 'login':
-        require('../src/controller/login.php');
+        require('../src/controller/Access.php');
+        login();
         break;
     case 'login-check':
-        require('../src/controller/login-check.php');
+        require('../src/controller/Access.php');
+        loginCheck();
         break;
-
+    case 'logout':
+        require('../src/controller/Access.php');
+        logout();
+        break;
 }
