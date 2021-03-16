@@ -5,7 +5,7 @@ require('../templates/header.php');
 require('../templates/menu.php');
 ?>
 
-Qui ci va la grafica della homepage quando sono autenticto
+CIAO
 
 
 <?php
