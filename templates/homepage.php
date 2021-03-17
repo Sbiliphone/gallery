@@ -9,6 +9,9 @@ require('../templates/menu.php');
 require('../templates/gallery.php');
 ?>
 
+
+
+
 <?php
 require('../templates/footer.php');
 ?>
