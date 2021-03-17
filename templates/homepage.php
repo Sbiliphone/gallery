@@ -5,8 +5,9 @@ require('../templates/header.php');
 require('../templates/menu.php');
 ?>
 
-v per vassena adasdarfr
-
+<?php
+require('../templates/gallery.php');
+?>
 
 <?php
 require('../templates/footer.php');
