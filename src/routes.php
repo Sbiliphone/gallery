@@ -35,7 +35,7 @@ switch ($action){
         setPassword();
         break;
     case 'image':
-        require('../src/controller/Image.php');
+        require('../src/Image.php');
         printImg();
         break;
 }
