@@ -23,12 +23,12 @@ function printImg(){
         ?>
         <div style="width: 300px; height: 300px">
 
-            <img src="img.jpeg" style="height: 100px; width: 200px">
+            <img src="/img.jpeg" style="height: 100px; width: 200px">
 
-            <img src="img.jpeg" style="height: 100px; width: 200px">
+            <img src="./img.jpeg" style="height: 100px; width: 200px">
 
 
-            <img src="<?php  echo $result['src'] ?>" style="height: 100px; width: 200px">
+            <img src="<?php  echo "../".$result['src'] ?>" style="height: 100px; width: 200px">
 
             <!--<button onclick="location.href='index.php?action=rename-image'" class="btn btn-secondary">Rename</button><br><br>-->
             <!--<button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>-->
