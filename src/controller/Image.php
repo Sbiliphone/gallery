@@ -11,11 +11,12 @@ function printImg(){
     global $db;
     $sql = "SELECT * FROM immagine ;";
     $rs = $db->execute($sql);
+
     foreach ($rs as $result) {
         echo "2";
 
         ?>
-        <img src="<?php echo $result['src']; ?>" style="height: 100px; width: 200px">
+        <img src="<?php  echo "uplodes/".$result['src']; ?>" style="height: 100px; width: 200px">
 <?php
     }
 
