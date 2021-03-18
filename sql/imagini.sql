@@ -1,8 +1,8 @@
-CREATE TABLE `app_user`
+CREATE TABLE `immagine`
 (
     `id`       INT          NOT NULL AUTO_INCREMENT,
-    `username` VARCHAR(255) NOT NULL,
-    `password` VARCHAR(255) NOT NULL,
+    `src` VARCHAR(255) NOT NULL,
+    `titolo` VARCHAR(255) NOT NULL,
+    `utente` VARCHAR(255) NOT NULL,
     UNIQUE KEY `id` (`id`) USING BTREE,
-    UNIQUE KEY `username` (`username`) USING BTREE
 );
