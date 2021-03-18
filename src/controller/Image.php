@@ -7,9 +7,11 @@ printImg();
 
 function printImg(){
 
-    echo "dsodihjasodha";
+    echo "1";
 
     $files = scandir('uploades/');
+
+    echo $files;
 
     foreach($files as $file) {
 
