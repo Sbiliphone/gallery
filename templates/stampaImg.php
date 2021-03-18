@@ -8,7 +8,7 @@
 
         }else{
             ?>
-            <img src="'<?php echo$url; ?>'" style="height: 100px; width: 200px">
+            <img src="<?php echo$url; ?>" style="height: 100px; width: 200px">
             <?php
         }
     }
