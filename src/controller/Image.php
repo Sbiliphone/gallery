@@ -1,4 +1,7 @@
 <?php
+require('../templates/header.php');
+
+require('../templates/menu.php');
 
 function printImg(){
     $files = scandir('uploades/');
