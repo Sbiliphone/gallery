@@ -14,6 +14,7 @@ function printImg(){
 
     foreach ($rs as $result) {
         echo "2";
+        echo $result['src'];
 
         ?>
         <div style="width: 300px; height: 300px">
