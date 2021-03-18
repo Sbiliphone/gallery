@@ -2,6 +2,7 @@
 
 function printImg(){
     $files = scandir('uploades/');
+
     foreach($files as $file) {
 
         $url ='uploades/'.$file;

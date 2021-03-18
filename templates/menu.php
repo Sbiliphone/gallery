@@ -11,7 +11,7 @@
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?action=images-list">Gestione immagini</a>
+                    <a class="nav-link" href="index.php?action=image">Gestione immagini</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?action=users-list">Gestione utenti</a>
