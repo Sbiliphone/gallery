@@ -1,8 +1,7 @@
 <?php
+
+function printImg(){
     $files = scandir('uploades/');
-    ?>
-     <button class="btn btn-primary" onclick="location.href = 'addImage.php'" style="width: 170px">Aggiungi Immagine</button><br><br>
-    <?php
     foreach($files as $file) {
 
         $url ='uploades/'.$file;
@@ -14,4 +13,6 @@
             <?php
         }
     }
+}
+
 ?>
