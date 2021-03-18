@@ -13,8 +13,8 @@ function printImg(){
 
     foreach($files as $file) {
 
-        $url ='uploades/'.$file;
-        echo $url;
+        $url ="uploades/".$file;
+        echo "1";
 
         if($url ==='uploades/.' || $url ==='uploades/..'   ){
 
@@ -26,6 +26,7 @@ function printImg(){
 
 
     }
+    echo "2";
 }
 
 ?>
