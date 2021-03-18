@@ -46,6 +46,9 @@ if(isset($_FILES['fileToUpload'])){
 // if everything is ok, try to upload file
     } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+            global $db;
+            $sql = "INSERT INTO immagine (src, titolo, utente) VALUES (" + $_FILES['fileToUpload']['name'] + ", " + 'utente' + ")";
+            $rs = $db->execute($sql);
             echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
             $pronto = 1;
         } else {
