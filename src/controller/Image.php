@@ -3,32 +3,23 @@ require('../templates/header.php');
 
 require('../templates/menu.php');
 
-printImg();
 
 function printImg(){
 
     echo "1";
 
-    $files = scandir('uploades/');
+    global $db;
+    $sql = "SELECT * FROM immagine ;";
+    $rs = $db->execute($sql);
+    foreach ($rs as $result) {
+        echo "2";
 
-    echo $files;
-
-    foreach($files as $file) {
-
-        $url ="uploades/".$file;
-        echo "1";
-
-        if($url ==='uploades/.' || $url ==='uploades/..'   ){
-
-        }else{
-            ?>
-            <img src="<?php echo $url; ?>" style="height: 100px; width: 200px">
-            <?php
-        }
-
-
+        ?>
+        <img src="<?php echo $result['src']; ?>" style="height: 100px; width: 200px">
+<?php
     }
-    echo "2";
+
+
 }
 
 ?>

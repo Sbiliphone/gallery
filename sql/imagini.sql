@@ -4,5 +4,5 @@ CREATE TABLE `immagine`
     `src` VARCHAR(255) NOT NULL,
     `titolo` VARCHAR(255) NOT NULL,
     `utente` VARCHAR(255) NOT NULL,
-    UNIQUE KEY `id` (`id`) USING BTREE,
+    UNIQUE KEY `id` (`id`) USING BTREE
 );
