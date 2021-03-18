@@ -23,7 +23,7 @@ function printImg(){
         ?>
         <div style="width: 300px; height: 300px">
 
-            <img src="/img.jpeg" style="height: 100px; width: 200px">
+            <img src="https://www.dottorbauedottormiao.it/images/site_blog_art/17/image/gatto-fa-pipi-fuori-dalla-lettiera.jpg?box=1920x900" style="height: 100px; width: 200px">
 
             <img src="./img.jpeg" style="height: 100px; width: 200px">
 
