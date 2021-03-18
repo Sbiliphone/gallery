@@ -7,7 +7,7 @@ require('../templates/menu.php');
 ?>
 
 <?php
-require('../templates/Image.php');
+require('../controller/Image.php');
 ?>
 
 <?php

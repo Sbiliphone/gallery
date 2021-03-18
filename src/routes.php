@@ -36,4 +36,5 @@ switch ($action){
         break;
     case 'image':
         require('../src/controller/addImage.php');
+        break;
 }
