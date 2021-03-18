@@ -1,7 +1,7 @@
 <?php
     $files = scandir('uploades/');
     ?>
-     <button class="btn btn-primary" onclick="location.href = 'caricaImmagini.php'" style="width: 170px">Aggiungi Immagine</button><br><br>
+     <button class="btn btn-primary" onclick="location.href = 'addImage.php'" style="width: 170px">Aggiungi Immagine</button><br><br>
     <?php
     foreach($files as $file) {
 
