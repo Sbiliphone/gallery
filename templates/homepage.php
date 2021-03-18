@@ -10,9 +10,6 @@ require('../templates/menu.php');
 require('../templates/stampaImg.php');
 ?>
 
-
-
-
 <?php
 require('../templates/footer.php');
 ?>
