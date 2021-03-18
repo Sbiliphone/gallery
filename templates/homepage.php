@@ -1,12 +1,13 @@
 <?php
 require('../templates/header.php');
 ?>
+
 <?php
 require('../templates/menu.php');
 ?>
 
 <?php
-require('../templates/gallery.php');
+require('../templates/stampaImg.php');
 ?>
 
 
