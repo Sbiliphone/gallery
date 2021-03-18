@@ -23,9 +23,9 @@ function printImg(){
         ?>
         <div style="width: 300px; height: 300px">
 
-            <img src="../uploades/img.jpeg" style="height: 100px; width: 200px">
+            <img src="img.jpeg" style="height: 100px; width: 200px">
 
-            <img src="uploades/img.jpeg" style="height: 100px; width: 200px">
+            <img src="img.jpeg" style="height: 100px; width: 200px">
 
 
             <img src="<?php  echo $result['src'] ?>" style="height: 100px; width: 200px">
