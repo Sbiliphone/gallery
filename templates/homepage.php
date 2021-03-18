@@ -7,11 +7,8 @@ require('../templates/menu.php');
 ?>
 
 <?php
-require('../templates/stampaImg.php');
+require('../templates/Image.php');
 ?>
-
-
-
 
 <?php
 require('../templates/footer.php');
