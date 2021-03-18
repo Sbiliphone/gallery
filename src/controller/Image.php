@@ -4,6 +4,9 @@ require('../templates/header.php');
 require('../templates/menu.php');
 
 function printImg(){
+
+    echo "dsodihjasodha";
+
     $files = scandir('uploades/');
 
     foreach($files as $file) {
