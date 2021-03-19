@@ -1,6 +1,5 @@
 <?php
 
-/*
     $pronto = 0;
 
     if(isset($_FILES['fileToUpload'])){
@@ -109,11 +108,4 @@
     </div>
     <?php
 
-*/
 ?>
-<!doctype html>
-<html lang="it">
-<head>
-    <h1>GG</h1>
-</head>
-<body class="d-flex flex-column min-vh-100">
