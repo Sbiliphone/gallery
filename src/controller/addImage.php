@@ -78,7 +78,7 @@ require('../templates/menu.php');
     <div style="text-align: center">
         <form action="" method="post" enctype="multipart/form-data">
 
-            <input type="text" name="titolo" id="titolo">
+            <input type="text" name="titolo" id="titolo" placeholder="Titolo">
             <input type="file" name="fileToUpload" id="fileToUpload">
             <input type="submit" value="Upload Image" name="submit">
 
