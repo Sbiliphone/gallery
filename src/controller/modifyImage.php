@@ -18,9 +18,9 @@ $id=$_REQUEST['id'];
     <form name="user" action="index.php?action=updateImage" method="post">
         <div class="row">
             <label for="titolo" class="required">Titolo</label>
-            <input style="width: 60px " type="text" id="titolo" name="titolo" required="required" maxlength="180" class="form-control" value="<?php echo $risultato['titolo'];?>">
+            <input style="width: 200px " type="text" id="titolo" name="titolo" required="required" maxlength="180" class="form-control" value="<?php echo $risultato['titolo'];?>">
         </div>
-        <input  type="hidden" id="id" name="id" value="<?php echo $id; ?>">
+        <input  type="hidden" id="id" name="id" value="<?php echo $risultato['id']; ?>">
         <button class="btn btn-primary">Salva</button>
     </form>
 </div>
