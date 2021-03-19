@@ -11,20 +11,22 @@ echo $id;
     $sql="SELECT titolo FROM immagine WHERE id='$id';";
     $rs = $db->execute($sql);
 
-    echo $rs;
-
-    die;
+    foreach($rs as $risultato){
+        ?>
+    </div>
+    <form name="user" action="index.php?action=updateImage" method="post">
+        <div class="row">
+            <label for="titolo" class="required">Titolo</label>
+            <input type="text" id="titolo" name="titolo" required="required" maxlength="180" class="form-control" value="<?php echo $risultato['titolo'];?>">
+        </div>
+        <input type="hidden" id="id" name="id" value="<?php echo $id; ?>">
+        <button class="btn btn-primary">Salva</button>
+    </form>
+    <?php
+    }
     ?>
 
-</div>
-<form name="user" action="index.php?action=updateImage" method="post">
-    <div class="row">
-        <label for="titolo" class="required">Titolo</label>
-        <input type="text" id="titolo" name="titolo" required="required" maxlength="180" class="form-control" value="<?php echo $rs['titolo'];?>">
-    </div>
-    <input type="hidden" id="id" name="id" value="<?php echo $id; ?>">
-    <button class="btn btn-primary">Salva</button>
-</form>
+
 
 
 
