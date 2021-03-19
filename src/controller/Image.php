@@ -37,7 +37,7 @@ function printImg(){
 
                 $utente  = $_SESSION['username'];
                 global $db;
-                $sql="SELECT isAdmin FROM app_user WHERE username='$utente' ";
+                $sql="SELECT isAdmin FROM app_user WHERE username='$utente';";
 
                 if($sql == true){
                     ?>
