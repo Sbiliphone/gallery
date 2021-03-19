@@ -5,14 +5,14 @@ require('../templates/header.php');
 require('../templates/menu.php');
 ?>
 
-<?php
+
+<div style="display: none">
+    <?php
     global $db;
     $sql = "SELECT * FROM app_user ;";
     $rs = $db->execute($sql);
-
-?>
-
-
+    ?>
+</div>
 
 <div class="container">
     <div class="d-flex">
