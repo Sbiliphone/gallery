@@ -88,6 +88,7 @@ require('../templates/menu.php');
                 $directory = "../../public/uploades/";
                 $images = glob($directory . "/*.jpg");
 
+                $titolo =
                 $nome = "uploads//".$_FILES['fileToUpload']['name'];
 
                 $nomeProva = "uploads//"."6f41a-american-gangsters-1920s-30s-4.jpg";
