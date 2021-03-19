@@ -15,15 +15,19 @@ function printImg(){
         ?>
     </div>
 
-    <div style="width: 1333px; height: 1222px;overflow: auto;">
+    <div style="width: 1500px; height: 1050px;overflow: auto;">
         <?php
         foreach ($rs as $result) {?>
             <div style="width: 300px; height: 350px; padding-left: 10%;display: inline-block;">
                 <h4><?php echo $result['titolo'] ?></h4>
                 <img src="<?php  echo "./uploades/".$result['src'] ?>" style="height: 100px; width: 200px; padding-bottom: 10px">
 
+
                 <button onclick="location.href='index.php?action=edith-image'" class="btn btn-secondary">Edit</button>
                 <?php
+
+                $_SESSION['idImmagine'] = $result['id'];
+
                 if($_SESSION['Admin']){
                     ?>
                     <button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>
