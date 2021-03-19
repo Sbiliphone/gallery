@@ -10,6 +10,9 @@ require('../templates/menu.php');
 
     <div style="width: 100% ;padding-left: 8%">
         <h3 style="float: left"> Upload immagine </h3>
+        <br>
+
+        <br>
         <div>
 
         </div>
