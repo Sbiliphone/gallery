@@ -70,4 +70,7 @@ switch ($action){
     case "edith-image":
         require ('../src/controller/editImg.php');
         break;
+    case "updateImage":
+        require('../src/controller/updateImage.php');
+        break;
 }
