@@ -28,7 +28,7 @@ function printImg(){
 
 
                 <img src="<?php  echo "./uploades/".$result['src'] ?>" style="height: 100px; width: 200px">
-                <h1><?php echo $result['titolo'] ?></h1>
+                <h4><?php echo $result['titolo'] ?></h4>
 
                 <button onclick="location.href='index.php?action=edith-image'" class="btn btn-secondary">Edit</button>
 
