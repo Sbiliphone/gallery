@@ -28,8 +28,15 @@ function printImg(){
 
 
                 <img src="<?php  echo "./uploades/".$result['src'] ?>" style="height: 100px; width: 200px">
+                <h3><?php $result['title']?></h3>
+                <button onclick="location.href='index.php?action=edith-image'" class="btn btn-secondary">Edit</button>
+                <?php if($_SESSION["isAdmin"]){
+                    ?>
+                    <button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>
+                    <?php
+                }
+                ?>
 
-                <!--<button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>-->
             </div>
         </center>
         <?php
