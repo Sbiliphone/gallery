@@ -10,10 +10,12 @@ require('../templates/menu.php');
 
     <div style="width: 100% ;padding-left: 8%">
         <h3 style="float: left"> Upload immagine </h3>
-        <br>
+        <div>
+
+        </div>
         <form action="" method="post" enctype="multipart/form-data">
 
-            <p style="font-size: 15px; margin-bottom:8px  "> Titolo</p>
+            <p style="font-size: 15px; margin-bottom:8px  ">Titolo</p>
             <input  type="text" name="titolo" id="titolo" placeholder="Titolo">
             <br>
             <p style="font-size: 15px; margin-bottom: 10px">File immagine</p>
