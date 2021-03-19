@@ -2,6 +2,8 @@
 require('../templates/header.php');
 require('../templates/menu.php');
 $id=$_REQUEST['id'];
+
+echo $id;
 ?>
 <div style="display: none">
     <?php
