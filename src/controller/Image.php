@@ -42,8 +42,11 @@ function printImg(){
                 echo $rs;
 
 
+                $valore = $rs;
 
-                if($rs === "isAdmin 1"){
+                echo $valore;
+
+                if($rs === $valore){
                     ?>
                     <button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>
                     <?php
