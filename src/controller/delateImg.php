@@ -1,5 +1,5 @@
 <?php
-$id=$_SESSION['idImmagine'];
+$id=$_REQUEST['id'];
 
 echo $id;
 
