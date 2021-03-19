@@ -15,7 +15,7 @@ function printImg(){
         ?>
     </div>
 
-    <div style="width: 1500px; height: 1050px;overflow: auto;">
+    <div style="width: 1800px; height: 8500px;overflow: auto;">
         <?php
         foreach ($rs as $result) {?>
             <div style="width: 300px; height: 350px; padding-left: 10%;display: inline-block;">
