@@ -17,7 +17,7 @@ $rs = $db->execute($sql);
 </div>
 
 
-    <div style="width: 100%; height: 100%;overflow: auto;">
+    <div style="width: 1800px; height: 800px;overflow: auto;">
         <?php
         foreach ($rs as $result) {?>
             <div style="width: 300px; height: 300px; padding-left: 10%;display: inline-block;">
