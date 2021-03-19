@@ -41,4 +41,27 @@ switch ($action){
     case 'addImage':
         require ('../src/controller/addImage.php');
         break;
+    case 'users-list':
+        //require('../public/users-list.php');
+        require('../src/controller/users-list.php');
+        break;
+
+    case 'nuovo':
+        require('../src/controller/nuovo.php');
+        break;
+
+    case 'saveUser':
+        require('../src/controller/saveUser.php');
+        break;
+    case 'deleteUser':
+        require('../src/controller/deleteUser.php');
+        break;
+
+    case 'modifyUser':
+        require('../src/controller/modifyUser.php');
+        break;
+
+    case "updateUser":
+        require('../src/controller/updateUser.php');
+        break;
 }
