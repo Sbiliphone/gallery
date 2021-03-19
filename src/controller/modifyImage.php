@@ -3,7 +3,6 @@ require('../templates/header.php');
 require('../templates/menu.php');
 $id=$_REQUEST['id'];
 
-echo $id;
 ?>
 <div style="display: none">
     <?php
@@ -14,6 +13,8 @@ echo $id;
     foreach($rs as $risultato){
         ?>
     </div>
+
+<div style="width: 100% ;padding-left: 8%">
     <form name="user" action="index.php?action=updateImage" method="post">
         <div class="row">
             <label for="titolo" class="required">Titolo</label>
@@ -22,6 +23,7 @@ echo $id;
         <input type="hidden" id="id" name="id" value="<?php echo $id; ?>">
         <button class="btn btn-primary">Salva</button>
     </form>
+</div>
     <?php
     }
     ?>
