@@ -8,7 +8,7 @@ require('../templates/menu.php');
 
 
 
-    <div style="text-align: center">
+    <div style="width: 100% ;padding-left: 10%">
         <h3 style="float: left"> Caricamento immagine </h3>
         <br>
         <form action="" method="post" enctype="multipart/form-data">
