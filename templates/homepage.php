@@ -5,6 +5,7 @@ require('../templates/header.php');
 <?php
 require('../templates/menu.php');
 ?>
+
 <div style="display: none">
 
 <?php

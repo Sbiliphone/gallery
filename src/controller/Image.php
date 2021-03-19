@@ -7,52 +7,37 @@ require('../templates/menu.php');
 function printImg(){
 
 ?>
-<div style="display: none">
-<?php
-global $db;
-$sql = "SELECT * FROM immagine ;";
-$rs = $db->execute($sql);
-?></div>
-<?php
-
-    foreach ($rs as $result) {
-
-
+    <div style="display: none">
+        <?php
+            global $db;
+            $sql = "SELECT * FROM immagine ;";
+            $rs = $db->execute($sql);
         ?>
-        <center>
-            <div style="width: 300px; height: 300px">
+    </div>
+
+    <div style="width: 100%; height: 100%;overflow: auto;">
+        <?php
+        foreach ($rs as $result) {?>
+            <div style="width: 300px; height: 300px; padding-left: 10%;display: inline-block;">
                 <h4><?php echo $result['titolo'] ?></h4>
-
-                <img src="<?php  echo "./uploades/".$result['src'] ?>" style="height: 100px; width: 200px">
-
-                <br>
-
+                <img src="<?php  echo "./uploades/".$result['src'] ?>" style="height: 100px; width: 200px; padding-bottom: 10px">
 
                 <button onclick="location.href='index.php?action=edith-image'" class="btn btn-secondary">Edit</button>
-
-
-
                 <?php
-/*
-                $utente  = $_SESSION['username'];
-                global $db;
-                $sql="SELECT isAdmin FROM app_user WHERE username='$utente';";
-                $rs = $db->execute($sql);
-*/
-
-// 1 o true
                 if($_SESSION['Admin']){
                     ?>
                     <button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>
                     <?php
                 }
                 ?>
-
             </div>
-        </center>
-        <?php
-    }
+            <?php
+        }
 
+        ?>
+    </div>
+
+<?php
 }
 
 ?>
