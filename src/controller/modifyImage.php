@@ -7,7 +7,7 @@ $id=$_REQUEST['id'];
 <div style="display: none">
     <?php
     global $db;
-    $sql="SELECT titolo FROM immagine WHERE id='$id';";
+    $sql="SELECT titolo, id FROM immagine WHERE id='$id';";
     $rs = $db->execute($sql);
 
     foreach($rs as $risultato){
