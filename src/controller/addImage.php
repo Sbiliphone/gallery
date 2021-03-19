@@ -2,9 +2,8 @@
 require('../../templates/header.php');
 require('../../templates/menu.php');
 
-
+/*
     $pronto = 0;
-
 
     if(isset($_FILES['fileToUpload'])){
         $target_dir = "../../public/uploades/";
@@ -112,4 +111,11 @@ require('../../templates/menu.php');
     </div>
     <?php
 
-
+*/
+?>
+<!doctype html>
+<html lang="it">
+<head>
+    <h1>GG</h1>
+</head>
+<body class="d-flex flex-column min-vh-100">
