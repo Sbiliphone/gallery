@@ -7,8 +7,6 @@ require('../templates/menu.php');
 function printImg(){
 
 
-    echo "1";
-
     global $db;
     $sql = "SELECT * FROM immagine ;";
     $rs = $db->execute($sql);
