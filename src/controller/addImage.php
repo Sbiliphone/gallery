@@ -1,11 +1,9 @@
 <?php
 require('../../templates/header.php');
 require('../../templates/menu.php');
-function addImage(){
+
 
     $pronto = 0;
-
-
 
 
     if(isset($_FILES['fileToUpload'])){
@@ -114,4 +112,4 @@ function addImage(){
     </div>
     <?php
 
-}
+
