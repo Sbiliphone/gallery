@@ -121,3 +121,8 @@ require('../templates/menu.php');
 
 ?>
     </div>
+
+
+    <?php
+    require('../templates/footer.php');
+    ?>

@@ -41,3 +41,7 @@ function printImg(){
 }
 
 ?>
+
+<?php
+require('../templates/footer.php');
+?>
