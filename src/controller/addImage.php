@@ -10,11 +10,14 @@ require('../templates/menu.php');
 
     <div style="text-align: center">
         <h3 style="float: left"> Caricamento immagine </h3>
+        <br>
         <form action="" method="post" enctype="multipart/form-data">
             <p style="font-size: 15px; float: left">Titolo</p>
+            <br>
             <input style="float: left" type="text" name="titolo" id="titolo" placeholder="Titolo">
             <br>
-            <pstyle="font-size: 15px float: left">File immagine</p>
+            <p style="font-size: 15px; float: left">File immagine</p>
+            <br>
             <input style="float: left" type="file" name="fileToUpload" id="fileToUpload">
             <br>
             <input style="background-color: dodgerblue; float: left; color: white" type="submit" value="Upload" name="submit">
