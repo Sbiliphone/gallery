@@ -64,4 +64,10 @@ switch ($action){
     case "updateUser":
         require('../src/controller/updateUser.php');
         break;
+    case "delete-image":
+        require('../src/controller/delateImg.php');
+        break;
+
+
+
 }
