@@ -20,6 +20,13 @@
 
         $sql="INSERT INTO app_user (username, password, isAdmin, email, name, lastname) VALUES ('$username', '$password2', '$role', '$email', '$firstname', '$lastname')";
         $rs = $db->execute($sql);
+     }else{
+
+
+         // ALLERT PER PASWORD ERRATA
+
+
+         header('Location:index.php?action=nuovo');
      }
 
      header('Location:index.php?action=users-list');
