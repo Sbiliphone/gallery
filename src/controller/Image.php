@@ -31,32 +31,15 @@ function printImg(){
 
 
                 <?php
-
+/*
                 $utente  = $_SESSION['username'];
                 global $db;
                 $sql="SELECT isAdmin FROM app_user WHERE username='$utente';";
                 $rs = $db->execute($sql);
+*/
 
-                echo $rs;
-
-
-                $valore = $rs;
-
-                echo $valore;
-
-                //splittare
-
-                $pattern = "/ /";
-                $chars = preg_split($pattern, $rs, -1, PREG_SPLIT_DELIM_CAPTURE);
-
-
-                for($i=0;$i<count($chars);$i++) {
-                    echo "'" . $chars[$i] . "'<br />\n";
-                }
-
-
-
-                if($rs === $valore){
+// 1 o true
+                if($_SESSION['Admin']){
                     ?>
                     <button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>
                     <?php
