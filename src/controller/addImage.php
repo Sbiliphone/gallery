@@ -37,7 +37,7 @@ require('../templates/menu.php');
         </form>
     </div>
 
-    <div style="font-size: 10px; color: green;">
+    <div style="font-size: 10px; color: red; width: 100% ;padding-left: 8%">
 
 
     <?php
@@ -102,10 +102,18 @@ require('../templates/menu.php');
                     ?></div>
                 <?php
 
+                ?>
+                <p style="color: green">
+
+        <?php
                 echo "Il file". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). "è stato caricato correttamente.";
+
+                ?>
+                </p>
+        <?php
                 $pronto = 1;
             } else {
-                echo '<h4>Scusa, errore durante il caricameto del fiel.</h4> ';
+                echo "Scusa, errore durante il caricameto del fiel.";
             }
         }
     }
