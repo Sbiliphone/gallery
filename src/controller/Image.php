@@ -25,7 +25,8 @@ function printImg(){
 
             <img src="https://www.dottorbauedottormiao.it/images/site_blog_art/17/image/gatto-fa-pipi-fuori-dalla-lettiera.jpg?box=1920x900" style="height: 100px; width: 200px">
 
-            <img src="src/img2.png" style="height: 100px; width: 200px">
+
+            <img src=" ./uploades/img2.png" style="height: 100px; width: 200px">
 
 
             <img src="<?php  echo $result['src'] ?>" style="height: 100px; width: 200px">
