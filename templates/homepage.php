@@ -4,11 +4,17 @@ require('../templates/header.php');
 
 <?php
 require('../templates/menu.php');
+?>
+<div style="display: none">
 
+<?php
 global $db;
 $sql = "SELECT * FROM immagine ;";
 $rs = $db->execute($sql);
+
 ?>
+</div>
+
 
     <div style="width: 100%; height: 100%;overflow: auto;">
         <?php
