@@ -1,15 +1,15 @@
 <?php
 require('../templates/header.php');
 ?>
-<div class="col-md-6 offset-md-3 text-center mb-md-3">
-    <h2 class="mb-0">Log in, please.</h2>
-    <p>You're almost there, you only need to tell us who you are!</p>
 
-</div>
 <div class="container my-auto">
     <form method="post" action="?action=login-check" style="margin-left: 550px">
-
         <div class="mb-3">
+            <div class="col-md-6 offset-md-3 text-center mb-md-3">
+                <h2 class="mb-0">Log in, please.</h2>
+                <p>You're almost there, you only need to tell us who you are!</p>
+            </div>
+
             <label for="username" class="form-label">Username</label>
             <input style="width: 200px" type="text" class="form-control" id="username" aria-describedby="usernameHelp" name="username">
             <div id="usernameHelp" class="form-text">Inserisci il tuo nome utente.</div>
