@@ -1,7 +1,6 @@
 <?php
 require('../../templates/header.php');
 require('../../templates/menu.php');
-addImage();
 function addImage(){
 
     $pronto = 0;

@@ -18,7 +18,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?action=add-image">Agiungi immagine</a>
-                    <button onclick="location.href='index.php?action=add-image'" class="btn btn-secondary" style="background-color: dodgerblue" ></button>
+                    <button onclick="location.href='index.php?action=add-image'" class="btn btn-secondary" style="background-color: dodgerblue" >Agiungi immagine</button>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
