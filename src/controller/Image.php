@@ -33,7 +33,7 @@ function printImg(){
             <!--<button onclick="location.href='index.php?action=rename-image'" class="btn btn-secondary">Rename</button><br><br>-->
             <!--<button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>-->
         </div>
-<?php
+        <?php
     }
 
 }
