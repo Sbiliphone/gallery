@@ -1,14 +1,14 @@
 <?php
 require('../templates/header.php');
 ?>
+<div class="col-md-6 offset-md-3 text-center mb-md-3">
+    <h2 class="mb-0">Log in, please.</h2>
+    <p>You're almost there, you only need to tell us who you are!</p>
 
-<div class="container my-auto" style="padding-left: 38%">
-    <form method="post" action="?action=login-check">
-        <div class="col-md-6 offset-md-3 text-center mb-md-3">
-            <h2 class="mb-0">Log in, please.</h2>
-            <p>You're almost there, you only need to tell us who you are!</p>
+</div>
+<div class="container my-auto">
+    <form method="post" action="?action=login-check" style="margin-left: 550px">
 
-        </div>
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
             <input style="width: 200px" type="text" class="form-control" id="username" aria-describedby="usernameHelp" name="username">
@@ -17,7 +17,6 @@ require('../templates/header.php');
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
             <input style="width: 200px"  type="password" class="form-control" id="password" name="password">
-            <div id="usernameHelp" class="form-text">Scrivi la tua password solo nella tua mente, non su un post-it.
             </div>
         </div>
         <div class="col-3 d-flex">
