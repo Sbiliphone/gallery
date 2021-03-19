@@ -16,10 +16,6 @@ function printImg(){
 
 
     foreach ($rs as $result) {
-        echo "2 ";
-        echo $result['src'];
-
-        echo $_SESSION['id'];
 
 
         ?>
