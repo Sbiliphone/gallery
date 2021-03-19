@@ -7,19 +7,17 @@ require('../templates/menu.php');
     <body>
 
 
-    <h1> <b>Caricamento immagine</b> </h1>
 
     <div style="text-align: center">
+        <h3 style="float: left"> Caricamento immagine </h3>
         <form action="" method="post" enctype="multipart/form-data">
-
-            <p style="font-size: 20px">Titolo</p>
-            <input type="text" name="titolo" id="titolo" placeholder="Titolo">
+            <p style="font-size: 15px; float: left">Titolo</p>
+            <input style="float: left" type="text" name="titolo" id="titolo" placeholder="Titolo">
             <br>
-            <p style="font-size: 15px">File immagine</p>
-            <input type="file" name="fileToUpload" id="fileToUpload">
+            <pstyle="font-size: 15px float: left">File immagine</p>
+            <input style="float: left" type="file" name="fileToUpload" id="fileToUpload">
             <br>
-            <input style="background-color: dodgerblue " type="submit" value="Upload Image" name="submit">
-
+            <input style="background-color: dodgerblue; float: left; color: white" type="submit" value="Upload" name="submit">
             <ul>
                 <?php
                 $nome = "uploads//".$_FILES['fileToUpload']['name'];
