@@ -8,16 +8,22 @@ $id=$_REQUEST['id'];
     global $db;
     $sql="SELECT titolo FROM immagine WHERE id='$id';";
     $rs = $db->execute($sql);
-    ?>
-</div>
 
+    echo $rs;
+    ?>
+
+
+</div>
 <form name="user" action="index.php?action=updateImage" method="post">
     <div class="row">
-        <div class="col-md-6 mb-3">
-            <div class="form-group"><label for="titolo" class="required">Titolo</label><input type="text" id="titolo" name="titolo" required="required" maxlength="180" class="form-control" value="<?php echo $rs['titolo'];?>"></div>
-        </div>
-        <button class="btn btn-primary">Salva</button>
+        <label for="titolo" class="required">Titolo</label>
+        <input type="text" id="titolo" name="titolo" required="required" maxlength="180" class="form-control" value="<?php echo $rs['titolo'];?>">
     </div>
+    <input type="hidden" id="id" name="id" value="<?php echo $id; ?>">
+    <button class="btn btn-primary">Salva</button>
+</form>
+
+
 
 
 

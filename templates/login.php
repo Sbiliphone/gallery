@@ -2,7 +2,7 @@
 require('../templates/header.php');
 ?>
 
-<div class="container my-auto">
+<div class="container my-auto" style="padding-left: 38%">
     <form method="post" action="?action=login-check">
         <div class="col-md-6 offset-md-3 text-center mb-md-3">
             <h2 class="mb-0">Log in, please.</h2>
