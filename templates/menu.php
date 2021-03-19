@@ -14,6 +14,9 @@
                     <a class="nav-link" href="index.php?action=image">Gestione immagini</a>
                 </li>
                 <li class="nav-item">
+                    <button onclick="location.href='index.php?action=add-image'" class="btn btn-secondary">Aggiunti immagine</button>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="index.php?action=users-list">Gestione utenti</a>
                 </li>
             </ul>

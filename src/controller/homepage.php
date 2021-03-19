@@ -6,3 +6,4 @@ if (!isset($_SESSION['authorized']) || $_SESSION['authorized']!==true){
 }
 require('../templates/homepage.php');
 
+
