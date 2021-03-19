@@ -14,13 +14,13 @@ $id=$_REQUEST['id'];
         ?>
     </div>
 
-<div style="width: 100% ;padding-left: 8%">
+<div style="width: 100% ;padding-left: 15%">
     <form name="user" action="index.php?action=updateImage" method="post">
         <div class="row">
             <label for="titolo" class="required">Titolo</label>
             <input type="text" id="titolo" name="titolo" required="required" maxlength="180" class="form-control" value="<?php echo $risultato['titolo'];?>">
         </div>
-        <input type="hidden" id="id" name="id" value="<?php echo $id; ?>">
+        <input style="width: 80px" type="hidden" id="id" name="id" value="<?php echo $id; ?>">
         <button class="btn btn-primary">Salva</button>
     </form>
 </div>
