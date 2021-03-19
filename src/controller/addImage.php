@@ -1,5 +1,7 @@
-
 <?php
+require('../../templates/header.php');
+require('../../templates/menu.php');
+addImage();
 function addImage(){
 
     $pronto = 0;
@@ -8,7 +10,7 @@ function addImage(){
 
 
     if(isset($_FILES['fileToUpload'])){
-        $target_dir = "uploades/";
+        $target_dir = "../../public/uploades/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -68,14 +70,14 @@ function addImage(){
 
     <div style="text-align: center">
         <form action="" method="post" enctype="multipart/form-data">
-            Segli una immagine da caricare:
+
             <input type="file" name="fileToUpload" id="fileToUpload">
             <input type="submit" value="Upload Image" name="submit">
 
             <ul>
                 <?php
 
-                $directory = "uploads/";
+                $directory = "../../public/uploades/";
                 $images = glob($directory . "/*.jpg");
 
                 $nome = "uploads//".$_FILES['fileToUpload']['name'];
