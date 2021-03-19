@@ -18,10 +18,10 @@ require('../templates/menu.php');
         </div>
         <form action="" method="post" enctype="multipart/form-data">
 
-            <p style="font-size: 15px; margin-bottom:8px  ">Titolo</p>
+            <p style="font-size: 15px; margin-bottom:7px  ">Titolo</p>
             <input  type="text" name="titolo" id="titolo" placeholder="Titolo">
             <br>
-            <p style="font-size: 15px; margin-bottom: 10px">File immagine</p>
+            <p style="font-size: 15px; margin-bottom: 7px;margin-top: 4px">File immagine</p>
             <input  type="file" name="fileToUpload" id="fileToUpload">
             <br>
             <input style="background-color: dodgerblue; color: white" type="submit" value="Upload" name="submit">
