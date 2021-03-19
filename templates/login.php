@@ -21,7 +21,7 @@ require('../templates/header.php');
             </div>
         </div>
         <div class="col-3 d-flex">
-            <img src="/assets/images/undraw_Login_re_4vu2.svg" alt="login" class="img-fluid my-auto">
+            <img src="./uploades/immagineLogin.png" alt="login" class="img-fluid my-auto">
         </div>
 
         <div class="d-flex">
