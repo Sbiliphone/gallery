@@ -26,6 +26,10 @@ require('../templates/menu.php');
 
         </form>
     </div>
+
+    <div style="text-align: center">
+
+
     <?php
     $pronto = 0;
 
@@ -67,7 +71,6 @@ require('../templates/menu.php');
 
         // Check if $uploadOk is set to 0 by an error
         if ($uploadOk == 0) {
-            echo "Scusa, caricametno non riuscito.";
             // if everything is ok, try to upload file
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
@@ -99,3 +102,4 @@ require('../templates/menu.php');
 
 
 ?>
+    </div>
