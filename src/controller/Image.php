@@ -25,10 +25,10 @@ function printImg(){
         ?>
         <center>
             <div style="width: 300px; height: 300px">
-
+                <h4><?php echo $result['titolo'] ?></h4>
 
                 <img src="<?php  echo "./uploades/".$result['src'] ?>" style="height: 100px; width: 200px">
-                <h4><?php echo $result['titolo'] ?></h4>
+
 
                 <button onclick="location.href='index.php?action=edith-image'" class="btn btn-secondary">Edit</button>
 
@@ -44,7 +44,7 @@ function printImg(){
                 echo $rs;
 
 
-                if($rs === "isAdmin 1"){
+                if($rs === "1"){
                     ?>
                     <button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>
                     <?php
