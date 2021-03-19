@@ -37,7 +37,7 @@ require('../templates/menu.php');
         </form>
     </div>
 
-    <div style="text-align: center">
+    <div style="font-size: 10px; color: green;">
 
 
     <?php
