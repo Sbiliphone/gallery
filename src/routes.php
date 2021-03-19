@@ -40,6 +40,6 @@ switch ($action){
         break;
     case 'addImage':
         require ('../src/controller/Image.php');
-        addImage();
+        printImg();
         break;
 }
