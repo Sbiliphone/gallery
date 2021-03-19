@@ -4,6 +4,11 @@ require('../templates/header.php');
 
 <div class="container my-auto">
     <form method="post" action="?action=login-check">
+        <div class="col-md-6 offset-md-3 text-center mb-md-3">
+            <h2 class="mb-0">Log in, please.</h2>
+            <p>You're almost there, you only need to tell us who you are!</p>
+
+        </div>
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
             <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" name="username">
@@ -15,12 +20,10 @@ require('../templates/header.php');
             <div id="usernameHelp" class="form-text">Scrivi la tua password solo nella tua mente, non su un post-it.
             </div>
         </div>
-        <!--
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="remember_me">
-            <label class="form-check-label" for="remember_me">Check me out</label>
+        <div class="col-3 d-flex">
+            <img src="/assets/images/undraw_Login_re_4vu2.svg" alt="login" class="img-fluid my-auto">
         </div>
-        -->
+
         <div class="d-flex">
             <button type="submit" class="btn btn-primary">Accedi</button>
             <?php
