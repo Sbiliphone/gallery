@@ -3,14 +3,16 @@ require('../templates/header.php');
 ?>
 <?php
 require('../templates/menu.php');
+$id=$_REQUEST['user'];
 ?>
-
-<?php
-    $id=$_REQUEST['user'];
-
+<div style="display: none">
+    <?php
     global $db;
     $sql="SELECT * FROM app_user WHERE id='$id'";
     $rs = $db->execute($sql);
+    ?>
+</div>
+<?php
 
     foreach($rs as $risultato){
         ?>
