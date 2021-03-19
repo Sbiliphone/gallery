@@ -72,17 +72,56 @@ require('../templates/menu.php');
 
 
 
-<html>
+    <html>
+    <body>
 
-<div style="text-align: center">
-    <form action="" method="post" enctype="multipart/form-data">
+    <div style="text-align: center">
+        <form action="" method="post" enctype="multipart/form-data">
 
-        <input type="text" name="titolo" id="titolo" placeholder="Titolo">
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload Image" name="submit">
+            <input type="text" name="titolo" id="titolo" placeholder="Titolo">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
 
-    </form>
-</div>
+            <ul>
+                <?php
 
-</html>
+                $directory = "../../public/uploades/";
+                $images = glob($directory . "/*.jpg");
 
+                $titolo =
+                $nome = "uploads//".$_FILES['fileToUpload']['name'];
+
+                $nomeProva = "uploads//"."6f41a-american-gangsters-1920s-30s-4.jpg";
+
+                foreach($images as $image)
+                {
+                    if($nomeProva == $image && $pronto == 0 ){
+                        echo '<img id="immagine1" style="height: 400px; width: 450px;" src="'.$image .'" alt="'.$image.'" />'."<br /><br />";
+                    }elseif($nome == $image){
+                        echo '<img style="height:  400px; width: 450px;" src="'.$image .'" alt="'.$image.'" />'."<br /><br />";
+                        ?>
+
+                        <script>
+
+                            document.getElementById("immagine1").style.display = "none";
+
+                        </script>
+
+
+                        <?php
+                    }
+                }
+
+
+                ?>
+
+                </li>
+
+            </ul>
+
+
+        </form>
+    </div>
+    <?php
+
+?>
