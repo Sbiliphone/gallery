@@ -39,7 +39,7 @@ switch ($action){
         printImg();
         break;
     case 'addImage':
-        require ('../src/controller/addImage.php');
+        require ('../src/controller/Image.php');
         addImage();
         break;
 }
