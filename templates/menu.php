@@ -17,7 +17,8 @@
                     <a class="nav-link" href="index.php?action=users-list">Gestione utenti</a>
                 </li>
                 <li class="nav-item">
-                    <button onclick="location.href='index.php?action=add-image'" class="btn btn-secondary" style="background-color: dodgerblue" >Agiungi immagine</button>
+                    <a class="nav-link" href="index.php?action=add-image">Agiungi immagine</a>
+                    <button onclick="location.href='index.php?action=add-image'" class="btn btn-secondary" style="background-color: dodgerblue" ></button>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
