@@ -6,19 +6,24 @@ require('../templates/menu.php');
     <html>
     <body>
 
+
+    <h1> <b>Caricamento immagine</b> </h1>
+
     <div style="text-align: center">
         <form action="" method="post" enctype="multipart/form-data">
 
+            <p style="font-size: 20px">Titolo</p>
             <input type="text" name="titolo" id="titolo" placeholder="Titolo">
+            <br>
+            <p style="font-size: 15px">File immagine</p>
             <input type="file" name="fileToUpload" id="fileToUpload">
-            <input type="submit" value="Upload Image" name="submit">
+            <br>
+            <input style="background-color: dodgerblue " type="submit" value="Upload Image" name="submit">
 
             <ul>
                 <?php
                 $nome = "uploads//".$_FILES['fileToUpload']['name'];
-
                 ?>
-
                 </li>
 
             </ul>
