@@ -51,7 +51,12 @@ require('../templates/menu.php');
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                 global $db;
-                $sql = "INSERT INTO immagine (src, titolo, utente) VALUES (" + $_FILES['fileToUpload']['name'] + ", " + 'utente' + ")";
+                $nome = $_FILES["fileToUpload"]["name"];
+                // titolo immagine
+                $titiolo = "gggg";
+                //
+                $utente  = $_SESSION['username'];
+                $sql = "INSERT INTO immagine (src, titolo, utente) VALUES('$nome','$titiolo','$utente' );";
                 $rs = $db->execute($sql);
                 echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
                 $pronto = 1;
@@ -61,7 +66,11 @@ require('../templates/menu.php');
         }
     }
 
+
+
     ?>
+
+
 
     <html>
     <body>
