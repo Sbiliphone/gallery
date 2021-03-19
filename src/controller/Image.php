@@ -6,6 +6,7 @@ require('../templates/menu.php');
 
 function printImg(){
 
+
     echo "1";
 
     global $db;
@@ -13,9 +14,12 @@ function printImg(){
     $rs = $db->execute($sql);
 
 
+
     foreach ($rs as $result) {
         echo "2 ";
         echo $result['src'];
+
+        echo $_SESSION['id'];
 
 
         ?>
@@ -25,7 +29,6 @@ function printImg(){
 
                 <img src="<?php  echo "./uploades/".$result['src'] ?>" style="height: 100px; width: 200px">
 
-                <!--<button onclick="location.href='index.php?action=rename-image'" class="btn btn-secondary">Rename</button><br><br>-->
                 <!--<button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>-->
             </div>
         </center>
