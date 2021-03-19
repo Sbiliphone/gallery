@@ -67,7 +67,7 @@ switch ($action){
     case "delete-image":
         require('../src/controller/delateImg.php');
         break;
-
-
-
+    case "edith-image":
+        require ('../src/controller/editImg.php');
+        break;
 }
