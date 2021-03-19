@@ -40,8 +40,10 @@ function printImg(){
                 $sql="SELECT isAdmin FROM app_user WHERE username='$utente';";
                 $rs = $db->execute($sql);
 
+                echo $rs
 
-                if($rs == true){
+
+                if($rs == 1){
                     ?>
                     <button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>
                     <?php
