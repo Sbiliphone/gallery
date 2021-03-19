@@ -38,6 +38,13 @@ function printImg(){
                 global $db;
                 $sql="SELECT isAdmin FROM app_user WHERE username='$utente';";
                 $rs = $db->execute($sql);
+                ?>
+
+                <script>
+                    console.log(<?php echo $rs;?>);
+                </script>
+
+            <?php
 
                 echo $rs;
 
