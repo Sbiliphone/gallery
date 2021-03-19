@@ -24,7 +24,7 @@ require('../templates/menu.php');
             <p style="font-size: 15px; margin-bottom: 7px;margin-top: 4px">File immagine</p>
             <input  type="file" name="fileToUpload" id="fileToUpload">
             <br>
-            <input style="background-color: dodgerblue; color: white" type="submit" value="Upload" name="submit">
+            <input style="background-color: dodgerblue; color: white; padding-bottom: 15px" type="submit" value="Upload" name="submit">
             <ul>
                 <?php
                 $nome = "uploads//".$_FILES['fileToUpload']['name'];
