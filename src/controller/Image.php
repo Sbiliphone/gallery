@@ -16,7 +16,7 @@ function printImg(){
 
 
     foreach ($rs as $result) {
-        echo "2";
+        echo "2 ";
         echo $result['src'];
 
 
