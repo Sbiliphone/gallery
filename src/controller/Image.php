@@ -26,6 +26,7 @@ function printImg(){
             <!--<img src="../public/img2.png" style="height: 100px; width: 200px">-->
 
 
+<<<<<<< HEAD
             <img src="<?php  echo "./uploades/".$result['src'] ?>" style="height: 100px; width: 200px">
 
             <!--<button onclick="location.href='index.php?action=rename-image'" class="btn btn-secondary">Rename</button><br><br>-->
