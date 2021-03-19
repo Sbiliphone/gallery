@@ -10,8 +10,9 @@ $id=$_REQUEST['id'];
     $rs = $db->execute($sql);
 
     echo $rs;
-    ?>
 
+    die;
+    ?>
 
 </div>
 <form name="user" action="index.php?action=updateImage" method="post">
