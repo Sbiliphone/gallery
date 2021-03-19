@@ -6,12 +6,14 @@ require('../templates/menu.php');
 
 function printImg(){
 
-
-    global $db;
-    $sql = "SELECT * FROM immagine ;";
-    $rs = $db->execute($sql);
-
-
+?>
+<div style="display: none">
+<?php
+global $db;
+$sql = "SELECT * FROM immagine ;";
+$rs = $db->execute($sql);
+?></div>
+<?php
 
     foreach ($rs as $result) {
 

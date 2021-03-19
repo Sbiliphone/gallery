@@ -50,24 +50,31 @@ require('../templates/menu.php');
     // if everything is ok, try to upload file
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                global $db;
+
                 $nome = $_FILES["fileToUpload"]["name"];
                 // titolo immagine
-                $titiolo = "gggg";
-                //
+
+                $titiolo = $_REQUEST['titolo'];
+
                 $utente  = $_SESSION['username'];
-                $sql = "INSERT INTO immagine (src, titolo, utente) VALUES('$nome','$titiolo','$utente' );";
-                $rs = $db->execute($sql);
-                echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+
+
+                ?>
+                <div style="display: none">
+                    <?php
+                    global $db;
+                    $sql = "INSERT INTO immagine (src, titolo, utente) VALUES('$nome','$titiolo','$utente' );";
+                    $rs = $db->execute($sql);
+                    ?></div>
+                <?php
+
+                echo "Il file". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). "è stato caricato correttamente.";
                 $pronto = 1;
             } else {
                 echo "Sorry, there was an error uploading your file.";
             }
         }
     }
-
-
-
     ?>
 
 
@@ -84,34 +91,7 @@ require('../templates/menu.php');
 
             <ul>
                 <?php
-
-                $directory = "../../public/uploades/";
-                $images = glob($directory . "/*.jpg");
-
-                $titolo =
                 $nome = "uploads//".$_FILES['fileToUpload']['name'];
-
-                $nomeProva = "uploads//"."6f41a-american-gangsters-1920s-30s-4.jpg";
-
-                foreach($images as $image)
-                {
-                    if($nomeProva == $image && $pronto == 0 ){
-                        echo '<img id="immagine1" style="height: 400px; width: 450px;" src="'.$image .'" alt="'.$image.'" />'."<br /><br />";
-                    }elseif($nome == $image){
-                        echo '<img style="height:  400px; width: 450px;" src="'.$image .'" alt="'.$image.'" />'."<br /><br />";
-                        ?>
-
-                        <script>
-
-                            document.getElementById("immagine1").style.display = "none";
-
-                        </script>
-
-
-                        <?php
-                    }
-                }
-
 
                 ?>
 
