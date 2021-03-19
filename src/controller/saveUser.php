@@ -17,6 +17,7 @@
      }
 
      if($password1==$password2){
+
         $sql="INSERT INTO app_user (username, password, isAdmin, email, name, lastname) VALUES ('$username', '$password2', '$role', '$email', '$firstname', '$lastname')";
         $rs = $db->execute($sql);
      }
