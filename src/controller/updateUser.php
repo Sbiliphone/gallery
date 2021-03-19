@@ -12,7 +12,7 @@
     }else{
         $role=1;
     }
-       $sql="UPDATE app_user SET email='$email' AND name='$firstname' AND lastname='$lastname' AND isAdmin=$role WHERE id='$id'";
+       $sql="UPDATE app_user SET email= '$email'  AND name = '$firstname' AND lastname='$lastname' AND isAdmin=$role WHERE id='$id';";
        $rs = $db->execute($sql);
 
     header('Location:index.php?action=users-list');
