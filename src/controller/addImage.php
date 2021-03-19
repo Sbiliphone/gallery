@@ -12,7 +12,8 @@ require('../templates/menu.php');
         <h3 style="float: left"> Upload immagine </h3>
         <br>
         <form action="" method="post" enctype="multipart/form-data">
-            <p style="font-size: 15px;float: left; margin-bottom:8px  ">Titolo</p><br>
+
+            <p style="font-size: 15px; margin-bottom:8px  "> Titolo</p>
             <input  type="text" name="titolo" id="titolo" placeholder="Titolo">
             <br>
             <p style="font-size: 15px; margin-bottom: 10px">File immagine</p>
