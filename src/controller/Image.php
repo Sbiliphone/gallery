@@ -37,7 +37,7 @@ function printImg(){
                 $sql="SELECT isAdmin FROM app_user WHERE username='$utente';";
                 $rs = $db->execute($sql);
 
-                echo $rs[1];
+                echo $rs;
 
 
 
