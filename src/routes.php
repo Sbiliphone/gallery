@@ -68,7 +68,7 @@ switch ($action){
         require('../src/controller/delateImg.php');
         break;
     case "edith-image":
-        require ('../src/controller/editImg.php');
+        require('../src/controller/modifyImage.php');
         break;
     case "updateImage":
         require('../src/controller/updateImage.php');
