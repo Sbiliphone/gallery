@@ -13,10 +13,9 @@ require('../templates/header.php');
             <label for="username" class="form-label">Username</label>
             <input style="width: 200px" type="text" class="form-control" id="username" aria-describedby="usernameHelp" name="username">
             <div id="usernameHelp" class="form-text">Inserisci il tuo nome utente.</div>
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input style="width: 200px"  type="password" class="form-control" id="password" name="password">
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input style="width: 200px"  type="password" class="form-control" id="password" name="password">
             </div>
         </div>
         <div class="col-3 d-flex">
@@ -33,7 +32,10 @@ require('../templates/header.php');
             }
             ?>
         </div>
+        </div>
+
     </form>
+
 </div>
 
 <?php
