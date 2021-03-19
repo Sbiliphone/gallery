@@ -5,7 +5,7 @@ require('../templates/header.php');
 <div class="container my-auto">
     <form method="post" action="?action=login-check" style="margin-left: 550px">
         <div class="mb-3">
-            <div class="col-md-6 offset-md-3 text-center mb-md-3">
+            <div style="margin-left: -90px" class="col-md-6  text-center mb-md-3">
                 <h2 class="mb-0">Log in, please.</h2>
                 <p>You're almost there, you only need to tell us who you are!</p>
             </div>
