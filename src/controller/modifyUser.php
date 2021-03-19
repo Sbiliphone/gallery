@@ -8,7 +8,7 @@ $id=$_REQUEST['user'];
 <div style="display: none">
     <?php
     global $db;
-    $sql="SELECT * FROM app_user WHERE id='$id'";
+    $sql="SELECT * FROM app_user WHERE id='$id';";
     $rs = $db->execute($sql);
     ?>
 </div>
@@ -34,7 +34,7 @@ $id=$_REQUEST['user'];
                 <div class="form-group"><label for="user_lastname">Cognome</label><input type="text" id="user_lastname" name="lastname" class="form-control" value="<?php echo $risultato['lastname'];?>"></div>
             </div>
         </div>
-        <input type="hidden" id="id" name="id" value="<?php echo $risultato["id"];?>">
+        <input type="hidden" id="id" name="id" value="<?php echo $risultato["id"]; ?>">
         <button class="btn btn-primary">Salva</button>
         <?php
     }

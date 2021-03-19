@@ -9,7 +9,7 @@ function loginCheck()
     global $db;
     $username=$_REQUEST['username'];
     $password=md5($_REQUEST['password']);
-    $sql="SELECT * FROM app_user WHERE username='$username' AND password='$password'";
+    $sql="SELECT * FROM app_user WHERE username='$username' AND password='$password';";
     $rs = $db->execute($sql);
 
     if (count($rs->getRows())>0){
