@@ -16,7 +16,7 @@ foreach($rs as $risultato){
 <form name="user" action="index.php?action=updateImage" method="post">
     <div class="row">
         <div class="col-md-6 mb-3">
-            <div class="form-group"><label for="titolo" class="required">Titolo</label><input type="text" id="titolo" name="titolo" required="required" maxlength="180" class="form-control" value="<?php echo $rs['titolo'];?>"></div>
+            <div class="form-group"><label for="titolo" class="required">Titolo</label><input type="text" id="titolo" name="titolo" required="required" maxlength="180" class="form-control" value="<?php echo $risultato['titolo'];?>"></div>
         </div>
         <button class="btn btn-primary">Salva</button>
     </div>
