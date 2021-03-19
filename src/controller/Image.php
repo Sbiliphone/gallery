@@ -28,7 +28,7 @@ function printImg(){
             <!--<img src="../public/img2.png" style="height: 100px; width: 200px">-->
 
 
-            <img src="../public/uploades/<?php  echo $result['src'] ?>" style="height: 100px; width: 200px">
+            <img src="../public/<?php $result['src'] ?>" style="height: 100px; width: 200px">
 
             <!--<button onclick="location.href='index.php?action=rename-image'" class="btn btn-secondary">Rename</button><br><br>-->
             <!--<button onclick="location.href='index.php?action=delete-image'" class="btn btn-secondary">Delete</button>-->
