@@ -13,7 +13,12 @@
         $role=1;
     }
        $sql="UPDATE app_user SET email= '$email', name='$firstname', lastname='$lastname', isAdmin='$role' WHERE id='$id';";
+
        $rs = $db->execute($sql);
 
     header('Location:index.php?action=users-list');
+
+    $hella = false;
 ?>
+
+
