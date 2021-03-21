@@ -15,9 +15,6 @@ function printImg(){
         ?>
     </div>
 
-        <nobr>
-
-<div style="width: 1800px; height: 850px;overflow: auto;">
 <?php
 foreach($rs as $result){
     if($result["utente"] === $_SESSION['username'] || $_SESSION['Admin'] ){
@@ -48,8 +45,7 @@ foreach($rs as $result){
     }
         ?>
 
-    </div>
-    </nobr>
+
     <?php
 
 }
