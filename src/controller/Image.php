@@ -15,13 +15,13 @@ function printImg(){
         ?>
     </div>
 
+        <nobr>
 
 <div style="width: 1800px; height: 850px;overflow: auto;">
 <?php
 foreach($rs as $result){
     if($result["utente"] === $_SESSION['username'] || $_SESSION['Admin'] ){
     ?>
-        <nobr>
         <div style="width: 300px; height: 350px; padding-left: 10%;display: inline-block;">
             <form name="user" action="index.php?action=edith-image" method="post">
                 <div class="row">
@@ -43,12 +43,13 @@ foreach($rs as $result){
         ?>
         </div>
 
-        </nobr>
+
         <?php
     }
         ?>
 
     </div>
+    </nobr>
     <?php
 
 }
