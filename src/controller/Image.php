@@ -42,7 +42,6 @@ foreach($rs as $result){
         ?>
         </div>
         <?php
-        }
     }
         ?>
 
