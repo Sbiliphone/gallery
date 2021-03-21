@@ -16,7 +16,7 @@ function printImg(){
     </div>
 
 
-<div>
+<div style="width: 1800px; height: 800px;overflow: auto;">
 <?php
 foreach($rs as $result){
     if($result["utente"] === $_SESSION['username'] || $_SESSION['Admin'] ){
