@@ -47,15 +47,16 @@ foreach($rs as $result){
     }
         ?>
 
-    </div>
+
     <?php
 
 }
 
+
 }
 
 ?>
-
+</div>
 <?php
 require('../templates/footer.php');
 ?>
