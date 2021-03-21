@@ -46,6 +46,8 @@ foreach($rs as $result){
         <?php
         }else{
         echo "nono sono ".$_SESSION['username'];
+        echo "ma le foto sono di ".$result["utente"];
+
     }
         ?>
 
